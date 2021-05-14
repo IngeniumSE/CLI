@@ -1,0 +1,32 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://github.com/IngeniumSE/CLI/blob/main/schemas/config.schema.json",
+	"title": "Ingenium CLI Configuration",
+	"description": "The configuration for the Ingenium CLI",
+	"type": "object",
+	"properties": {
+		"version": {
+			"description": "The configuration format version",
+			"type": "number"
+		},
+		"build": {
+			"type": "object",
+			"properties": {
+				"protocol": {
+					"description": "The default protocol to use when cloning the Build repository",
+					"type": "string"
+				},
+				"repo": {
+					"description": "The SSH repo URL",
+					"type": "string"
+				},
+				"repo_http": {
+					"description": "The HTTPS repo URL",
+					"type": "string"
+				}
+			},
+			"required": [ "protocol", "repo", "repo_http" ]
+		}
+	},
+	"required": [ "version", "build" ]
+}
