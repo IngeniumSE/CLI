@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://github.com/IngeniumSE/CLI/blob/main/schemas/config.schema.json",
+	"$id": "https://raw.githubusercontent.com/IngeniumSE/CLI/main/schemas/config.schema.json",
 	"title": "Ingenium CLI Configuration",
 	"description": "The configuration for the Ingenium CLI",
 	"type": "object",
